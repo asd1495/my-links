@@ -29,6 +29,13 @@ h1 {
     display: block;
     margin: 40px auto 20px;
     border-radius: 50%;
+    transition: 0.4s ease-in-out;
+}
+
+.main-picture img:hover {
+    width: 100px;
+    height: 100px;
+    transition: 0.4s ease-in-out;
 }
 
 .main-links {
@@ -42,7 +49,11 @@ h1 {
     color: red;
 }
 
-.link {
+.main-links a {
+    text-align: center;
+}
+
+.main--links-link {
     position: relative;
     background-color: transparent;
     color: var(--accentTone);
@@ -59,13 +70,13 @@ h1 {
 }
 
 @media (hover: hover) {
-    .link:hover {
+    .main--links-link:hover {
         background-color: var(--accentTone);
         color: var(--background);
     }
 }
 
-.link:active {
+.main--links-link:active {
     background-color: var(--accentTone);
     color: var(--background);
 }
